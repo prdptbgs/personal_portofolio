@@ -1,0 +1,226 @@
+/* import fonts from fonts.css */
+@import url("../css/fonts.css");
+
+/* css variables */
+@import url("../css/partials/_variables.css");
+
+/* import global styling */
+@import url("../css/partials/_globle.css");
+
+/* start navigation */
+
+.navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.navbar{
+    padding: 1rem 20rem;
+}
+
+.nav-link{
+    font-weight: 900;
+    font: normal 700 15px/2px var(--roboto); /*font-style, font-weight, font-size, line-height, variable css*/
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: black;
+}
+
+.nav-link.active{
+    /* background: var(--gradient-color); nothing change with this code */
+    background: -webkit-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-link:hover{
+    background: -webkit-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* end navigation */
+
+.profile-pic-nav{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* Start Banner Area */
+.site-banner{
+    margin-left: 14.5vw;
+}
+
+.site-banner .site-title{
+    background: url(../img/bg-banner.png);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+}
+
+.site-title h3{
+    padding-top: 25%;
+    font-weight: bold;
+}
+
+.site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateX(-10px);
+}
+
+.site-title h1{
+    font-size: 5rem;
+}
+
+.site-title h4{
+    font-size: 1.5rem;
+}
+
+.banner-img>img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+.about-title .custom-title{
+    margin-top: 10vh;
+}
+/* End Banner Area */
+
+/* Start About Area */
+.about-area{
+    padding: 8rem 5rem;
+}
+.custom-title span{
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+    letter-spacing: 21px;
+}
+
+.paragraph>p{
+    padding: .4rem 9;
+}
+/* End About Area */
+
+/* Start Brand Area */
+.brand-area{
+    padding: 2rem 10rem;
+}
+
+.first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+
+.single-brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.single-brand>img{
+    width: 45px;
+    height: 44px;
+}
+
+.experience-area{
+    padding-left: auto;
+}
+
+.experience-area span{
+    display: flex;
+    margin-bottom: 0%;
+}
+
+.years-area{
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+
+.bg-panel{
+    position: relative;
+    left: -210px;
+    top: -340px;
+    background: #4418180a;
+    width: 360px;
+    height: 350px;
+    margin-left: 340px;
+    z-index: -1;
+}
+
+.years-area .years{
+    font: normal bold 40px/10px var(--roboto);
+    color: var(--primary-color2);
+    z-index: 2;
+}
+
+.years-area h2>span{
+    font: normal 600 22px/30px var(--roboto);
+}
+
+.call-area{
+    padding-left: 10rem;
+}
+/* End Brand Area */
+
+/* Start Porto Area */
+.button-porto{
+    width: 295px;
+    display: flex;
+    padding-top: 2vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.porto-btn{
+    border-radius: 3px;
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background.6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.porto-btn> a{
+    text-decoration: none;
+    color: white;
+}
+/* end Porto Area */
+
+/* Start Footer Area */
+.footer-area{
+    margin-top: 20vh;
+    padding: 5rem 0;
+    background: url("../img/footer-bg.png");
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+    font-size:32px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+/* End Footer Area */
+
+
